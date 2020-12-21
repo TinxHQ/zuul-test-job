@@ -8,12 +8,12 @@
     check:
       jobs:
         - wazo-js-sdk-yarn-test:
-            nodeset: debian-10
+            nodeset: conteneur
     gate:
       jobs:
         - wazo-js-sdk-yarn-test:
-            nodeset: debian-10
+            nodeset: conteneur
     auto-merge:
       jobs:
         - wazo-js-sdk-yarn-test:
-            nodeset: debian-10
+            nodeset: conteneur
