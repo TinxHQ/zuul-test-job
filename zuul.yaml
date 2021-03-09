@@ -8,12 +8,12 @@
     check:
       jobs:
         - wazo-js-sdk-yarn-test:
-            nodeset: pod-debian-10
+            nodeset: baaad
     gate:
       jobs:
         - wazo-js-sdk-yarn-test:
-            nodeset: pod-debian-10
+            nodeset: baaad
     auto-merge:
       jobs:
         - wazo-js-sdk-yarn-test:
-            nodeset: pod-debian-10
+            nodeset: baaad
