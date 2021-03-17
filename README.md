@@ -6,3 +6,5 @@ This is a fork of a random repository (wazo-js-sdk) to test Zuul. Almost random,
 It'll be deleted later on, when I'm done with Zuul migration
 
 Rémy
+
+Test using openstack worker
