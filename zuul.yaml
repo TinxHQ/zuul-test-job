@@ -1,6 +1,7 @@
 - job:
     name: wazo-js-sdk-yarn-test
     description: Build and test
+    parent: base
     pre-run: zuul.d/pre.yaml
     run: zuul.d/run.yaml
 
