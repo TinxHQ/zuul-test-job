@@ -28,15 +28,15 @@
     wazo-gate:
       jobs:
         - zuul-gate-job:
-            nodeset: vm-debian-11-m1s
+            nodeset: vm-debian-10-m1s
     auto-merge:
       jobs:
         - noop
     post:
       jobs:
         - zuul-post-job:
-            nodeset: vm-debian-11-m1s
+            nodeset: vm-debian-10-m1s
     periodic:
       jobs:
         - zuul-periodic-job:
-            nodeset: vm-debian-11-m1s
+            nodeset: vm-debian-10-m1s
