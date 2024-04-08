@@ -4,3 +4,8 @@
     - name: Gate job placeholder for testing
       debug:
         msg: "Zuul gate job successfully triggered"
+    - name: Send an alert to Mattermost for testing
+      mattermost:
+        url: https://mm.wazo.community
+        api_key: '{{ mattermost.api_key }}'
+        text: "Hello world from sf.dev.wazo.io, testing Mattermost message: {{ zuul.project.name }}'s job {{ zuul.job }} [finished](https://zuul.wazo.community/zuul/t/local/buildset/{{ zuul.buildset }})"

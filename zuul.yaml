@@ -7,6 +7,9 @@
     name: zuul-gate-job
     description: Build with search and copy
     run: zuul.d/zuul_gate_job.yaml
+    secrets:
+      - name: mattermost
+        secret: mattermost_global
 
 - job:
     name: zuul-post-job
